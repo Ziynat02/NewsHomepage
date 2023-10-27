@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --Offwhite: hsl(36, 100%, 99%);
+--GrayishBlue: hsl(233, 8%, 79%);
+--DarkGrayishBlue: hsl(236, 13%, 42%);
+--VerDarkBlue: hsl(240, 100%, 5%);
+--SoftOrange: hsl(35, 77%, 62%);
+--SoftRed: hsl(5, 85%, 63%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/* header start */
+header{
+    margin-top: 30px;
+    margin-bottom: 38px;
+}
+nav{
+    color: #000;
+    display: flex;
+    justify-content: space-between; 
+ }
+ nav .mainMenu{
+     display: flex;
+     list-style: none;
+ }
+ nav .mainMenu li a{
+     display: inline-block;
+     padding: 15px;
+     text-decoration: none;
+     color: var(--DarkGrayishBlue);
+     font-size: 1.1rem;
+ }
+ nav .mainMenu li a:hover{
+     color: var(--SoftOrange);
+ }
+ nav .openMenu{
+     font-size:2rem ;
+     margin: 20px;
+     display: none;
+     cursor: pointer;
+ }
+ nav .mainMenu .closeMenu{
+    margin-top: 1.2rem;
+     font-size:2rem ;
+     display: none;
+     cursor: pointer;
+ }
+ nav .logo{
+     margin: 6px;
+     cursor: pointer;
+ }
+/* header finish */
+/* main start */
+.main-part{
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+    
+}
+.main-left-part .vebDesktop{
+    max-width: 650px;
+    height: 300px;
+}
+.main-left-part .vebMobile{
+    display: none;
+    width: 100%;
+}
+.texts{
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.texts .text-left h1{
+    font-size: 48px;
+    font-weight: 800;
+    max-width: 350px;
+    line-height: normal;
+    color: var(--VerDarkBlue);
+}
+.texts .text-right p{
+    font-size: 15px;
+    color: var(--DarkGrayishBlue);
+    line-height: 1.75rem;
+    font-weight: 400;
+    max-width: 410px;
+    margin-bottom: 40px;
+}
+.texts .text-right a{
+    text-decoration: none;
+    background-color: var(--SoftRed);
+    letter-spacing: 0.25rem;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.texts .text-right a:active{
+    background: #000;
+}
+.main-right-part{
+    background: #000;
+    padding: 30px 30px 30px 24px;
+    
+}
+.main-right-part h2{
+    max-width:100px;
+    font-size: 33px;
+    font-weight: 700;
+    color: var(--SoftOrange);
+    margin-bottom: 16px;
+}
+.main-right-text h4{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 18rem;
+    cursor: pointer;
+}
+.main-right-text h4:active{
+    color: var(--SoftOrange);
+    cursor: pointer;
+}
+.main-right-text p{
+    max-width: 350px;
+    color: var(--GrayishBlue);
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-top: 13px;
+}
+.main-right-text hr{
+    color: var(--DarkGrayishBlue);
+    max-width: 100%;
+    margin:18px 0;
+}
+/* main finish */
+/* footer start */
+footer{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.cards{
+    display: flex;
+    gap: 28px;
+}
+.card{
+    display: flex;
+    gap: 17px;
+}
+.card img{
+    width: 100px;
+
+}
+.card h3{
+    color: var(--GrayishBlue);
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.card a{
+    text-decoration: none;
+    font-size: 16px;
+    max-width: 350px;
+    color: var(--VerDarkBlue);
+    font-weight: 700;
+}
+.card a:active{
+    color: var(--SoftRed);
+}
+.card p{
+    font-size: 15px;
+    max-width: 350px;
+    color: var(--DarkGrayishBlue);
+    line-height: 1.5rem;
+    margin-top: 8px;
+}
+
+
+/* footer finish */
+@media (max-width:812px) {
+    /* header start */
+header{
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+nav .mainMenu{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    transition: top 1s ease;
+    display: none;
+}
+nav .mainMenu .closeMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+nav .openMenu{
+    display: block;
+}
+nav .mainMenu li a:hover{
+    background: none;
+    color: rgb(255,123,0);
+    font-size: 1.6rem;
+}
+/* header .navbar .burger{
+    display: none;
+}
+ #menu{
+    display: block;
+}
+ #close{
+    display: none;
+} */
+/* header finish */
+/* main start */
+.main-part{
+    flex-wrap: wrap;    
+}
+.main-left-part .vebDesktop{
+   display: none;
+}
+.main-left-part .vebMobile{
+    display: block;
+}
+.texts{
+    margin-top: 20px;
+   flex-wrap: wrap;
+}
+.texts .text-right p{
+    margin-top: 20px;
+}
+.main-right-part{
+    padding: 25px 25px 25px 20px;
+    margin-top: 10px;
+    
+}
+.main-right-part h2{
+    margin-bottom: 10px;
+}
+.main-right-text p{
+    margin-top:10px;
+}
+.main-right-text hr{
+    margin:13px 0;
+}
+/* main finish */
+/* footer start */
+footer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.cards{
+    flex-wrap: wrap;
+}
+.card h3{
+    margin-bottom: 16px;
+}
+.card a:active{
+    color: var(--SoftRed);
+}
+.card p{
+    margin-top: 8px;
+}
+/* footer finish */
+}
