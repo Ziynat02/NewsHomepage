@@ -29,6 +29,8 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    background: var(--Offwhite);
+    padding: 1rem;
 }
 .container{
     max-width: 1024px;
@@ -36,8 +38,8 @@ body{
 }
 /* header start */
 header{
-    margin-top: 30px;
-    margin-bottom: 38px;
+    margin-top: 70px; 
+    margin-bottom: 38px; 
 }
 nav{
     color: #000;
@@ -56,7 +58,7 @@ nav{
      font-size: 1.1rem;
  }
  nav .mainMenu li a:hover{
-     color: var(--SoftOrange);
+     color: var(--SoftRed);
  }
  nav .openMenu{
      font-size:2rem ;
@@ -83,8 +85,8 @@ nav{
     
 }
 .main-left-part .vebDesktop{
-    max-width: 650px;
-    height: 300px;
+    max-width: 680px;
+    height: 350px;
 }
 .main-left-part .vebMobile{
     display: none;
@@ -97,7 +99,7 @@ nav{
 }
 .texts .text-left h1{
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 900;
     max-width: 350px;
     line-height: normal;
     color: var(--VerDarkBlue);
@@ -119,7 +121,7 @@ nav{
     font-size: 15px;
     font-weight: 700;
 }
-.texts .text-right a:active{
+.texts .text-right a:hover{
     background: #000;
 }
 .main-right-part{
@@ -141,7 +143,7 @@ nav{
     max-width: 18rem;
     cursor: pointer;
 }
-.main-right-text h4:active{
+.main-right-text h4:hover{
     color: var(--SoftOrange);
     cursor: pointer;
 }
@@ -188,7 +190,7 @@ footer{
     color: var(--VerDarkBlue);
     font-weight: 700;
 }
-.card a:active{
+.card a:hover{
     color: var(--SoftRed);
 }
 .card p{
@@ -232,7 +234,7 @@ nav .openMenu{
 }
 nav .mainMenu li a:hover{
     background: none;
-    color: rgb(255,123,0);
+    color: var(--SoftRed);
     font-size: 1.6rem;
 }
 /* header .navbar .burger{
@@ -244,6 +246,7 @@ nav .mainMenu li a:hover{
  #close{
     display: none;
 } */
+
 /* header finish */
 /* main start */
 .main-part{
